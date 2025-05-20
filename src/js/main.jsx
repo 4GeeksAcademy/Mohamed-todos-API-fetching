@@ -10,9 +10,11 @@ import '../styles/index.css'
 
 // components
 import Todo from './components/Todo';
+import App from './components/App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <Todo/>
+   {/* <Todo/> */}
+   <App/>
   </React.StrictMode>,
 )

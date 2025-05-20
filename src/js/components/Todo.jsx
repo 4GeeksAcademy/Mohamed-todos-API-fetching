@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/index.css";
 import { FaTrash } from "react-icons/fa";
 
 function Todo() {
     const [inputText, setInputText] = useState("");
     const [items, setItems] = useState([]);
+
+   
 
     function handleChange(event) {
         const newValue = event.target.value;
@@ -26,7 +28,7 @@ function Todo() {
 
     function removeItem(index) {
         setItems((prevItems) => {
-            return prevItems.filter((item, i) => i !== index);
+            return prevItems.filter((_item, i) => i !== index);
         });
     }
 
